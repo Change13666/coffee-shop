@@ -1,0 +1,354 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ebcccc;
+    color: #333;
+    line-height: 1.6; 
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; 
+    color: #222;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem; 
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Абзаци */
+p {
+    font-size: 1rem;
+    color: #555; 
+    margin-bottom: 15px;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header a:hover {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.header .logo {
+    font-size: 36px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    color: #f4c842;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo img {
+    height: 60px;
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Hero Section */
+.hero img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Кнопка "Завантажити" */
+.btn-download {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 12px 25px; 
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Тінь тексту */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тінь кнопки */
+}
+
+.btn-download:hover {
+    background-color: #ff9800;
+    color: #fff;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.btn-download img {
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Каталог */
+.card-text {
+    font-size: 28px; /* Збільшений розмір шрифту */
+    font-weight: bold; /* Жирний текст */
+    color: #333; /* Темний текст */
+    margin-top: 10px; /* Відступ зверху */
+  }
+  
+
+/* Стилі для стрілок у каруселі */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #ebcccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0.7);
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Секція відгуків */
+#feedback {
+    background-color: #f9f9f9; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 50px;
+  }
+  
+  #feedback h2 {
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: #333; 
+    text-align: center;
+  }
+  
+  #feedback .form-control {
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+  }
+  
+  #feedback .btn-primary {
+    background-color: #ffc107; 
+    border: none;
+    color: #333; 
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  #feedback .btn-primary:hover {
+    background-color: #ff9800; 
+    color: #fff; 
+    transform: scale(1.05); 
+  }
+  
+  #feedback label {
+    font-weight: bold; 
+    color: #555; 
+    margin-bottom: 5px;
+  }
+  
+  #feedback textarea {
+    resize: none; 
+  }
+  
+  /* Відступи для мобільних */
+  @media (max-width: 768px) {
+    #feedback {
+      padding: 20px;
+    }
+  
+    #feedback h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer img {
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.1); 
+}
+
+/* Модальні вікна */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fffdf7;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f2e5d8;
+    background-color: #fff3e0;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    color: #666;
+    font-size: 16px;
+}
+
+.modal-body .form-control {
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-body img.google-icon {
+    max-width: 40px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-body .btn-primary {
+    background-color: #ffc107;
+    border: none;
+    color: #333;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.modal-body .btn-outline-secondary {
+    border-color: #ddd;
+    color: #666;
+    border-radius: 8px;
+}
+
+.modal-body .btn-outline-secondary:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.modal-body a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}
+
+/* Мобільний вигляд */
+@media (max-width: 768px) {
+    .header .logo img {
+        height: 40px;
+    }
+
+    .btn-download {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .footer img {
+        width: 35px;
+        height: 35px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
